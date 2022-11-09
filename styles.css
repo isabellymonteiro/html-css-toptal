@@ -31,14 +31,14 @@ a {
     margin-bottom: 30px;
 }
 
-.task-one__table {
+.task__table {
     border-collapse: collapse;
     margin-bottom: 30px;
     width: 100%;
 }
 
-.task-one__table td {
-    padding: 6px;
+.task__table td {
+    padding: 8px;
     border: 1px solid;
 }
 

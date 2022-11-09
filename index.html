@@ -34,7 +34,7 @@
     <main>
         <section id="task-one" class="task">
             <h2>Task 1</h2>
-            <table class="task-one__table">
+            <table class="task__table">
                 <tr>
                     <td>a</td>
                     <td>caption</td>
@@ -207,6 +207,48 @@
                     </ol>
                 </li>
             </ul>
+        </section>
+        <section id="task-two" class="task">
+            <h2>Task 2</h2>
+            <p>Calculate the specificity of the following selectors:</p>
+            <table class="task__table">
+                <tr>
+                    <td>#container</td>
+                    <td>0,1,0,0 or 100</td>
+                </tr>
+                <tr>
+                    <td>div#container</td>
+                    <td>0,1,0,1 or 101</td>
+                </tr>
+                <tr>
+                    <td>div[id=container]</td>
+                    <td>0,0,1,1 or 11</td>
+                </tr>
+                <tr>
+                    <td>#container .row.flex</td>
+                    <td>0,1,2,0 or 120</td>
+                </tr>
+                <tr>
+                    <td>main .section *</td>
+                    <td>0,0,1,1 or 11</td>
+                </tr>
+                <tr>
+                    <td>.form > .row:hover</td>
+                    <td>0,0,3,0 or 30</td>
+                </tr>
+                <tr>
+                    <td>#section ~ aside > .span</td>
+                    <td>0,1,1,1 or 111</td>
+                </tr>
+                <tr>
+                    <td>#content ul > li + li</td>
+                    <td>0,1,0,3 or 103</td>
+                </tr>
+                <tr>
+                    <td>form .section input[disabled]</td>
+                    <td>0,0,2,2 or 22</td>
+                </tr>
+            </table>
         </section>
     </main>
 </body>
