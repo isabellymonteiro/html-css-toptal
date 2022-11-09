@@ -18,10 +18,13 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+}
+
 .bold {
     font-weight: 600;
 }
-
 
 .page-content__list > *:not(:first-child) {
     margin-top: 8px;
