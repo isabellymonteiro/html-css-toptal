@@ -1,0 +1,51 @@
+body {
+    font-family: Montserrat;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+
+.page-content__list > *:not(:first-child) {
+    margin-top: 8px;
+}
+
+.task {
+    margin-bottom: 30px;
+}
+
+.task-one__table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.task-one__table td {
+    padding: 6px;
+    border: 1px solid;
+}
+
+.task-one__subtasks > * {
+    margin-top: 20px;
+}
+
+.task-one__elements > * {
+    margin-top: 10px;
+}
