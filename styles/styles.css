@@ -1,0 +1,86 @@
+@import "globalVariables.css";
+
+body {
+    color: var(--dark-gray);
+    font-family: Montserrat;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto; 
+}
+
+h1 {
+    color: var(--main-blue);
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+a:link, a:visited {
+    color: var(--main-blue);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: var(--light-blue);
+}
+
+img {
+    width: 100%;
+}
+
+pre {
+    font-size: 1rem;
+    white-space: pre-line;
+    background-color: var(--gray);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    background-color: var(--gray);
+    padding: 2px;
+}
+
+li::marker {
+    color: var(--main-blue);
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.page-content__list > *:not(:first-child) {
+    margin-top: 8px;
+}
+
+.task {
+    margin-bottom: 30px;
+}
+
+.task__table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.task__table td {
+    padding: 8px;
+    border: 1px solid var(--dark-gray);
+}
+
+.task-one__subtasks > * {
+    margin-top: 20px;
+}
+
+.task-one__elements > * {
+    margin-top: 10px;
+}
+
+.task-four__list > * {
+    margin-top: 10px;
+}
