@@ -1,0 +1,170 @@
+:root {
+  /* colors (from https://design.toptal.net/brand-guidelines/color) */
+  --green: #00CC83;
+  --dark-green: #03B080;
+  --grey: #C4C6CA;
+  --dark-grey: #455065;
+  --darker-grey: #262D3D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--darker-grey);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  color: var(--grey);
+  min-height: 100vh;
+  padding: 1rem 1.5rem;
+}
+
+a:link, a:visited {
+  color: var(--green);
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: var(--dark-green);
+}
+
+.page__title {
+  color: var(--green);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--dark-grey);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.form__title {
+  color: var(--green);
+  text-align: center;
+  margin: 0;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form__email-container, .form__password-container,
+.form__birthday-container, .form__pizza-container,
+.form__message-container {
+  display: grid;
+  gap: .5rem;
+  width: 100%;
+}
+
+.form__label {
+  font-size: 1rem;
+}
+
+.form__input, .form__select, .form__message {
+  color: inherit;
+  font-size: 1rem;
+  background-color: var(--dark-grey);
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+.form__message {
+  height: 160px;
+}
+
+.form__termsOfUse-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+}
+
+.form__checkbox {
+  appearance: none;
+	position: relative;
+	background-color: var(--dark-grey);
+  border-radius: .25rem;
+	padding: .6rem;
+  transition: .2s;
+}
+
+.form__checkbox:checked {
+	background-color: var(--green);
+}
+
+.form__checkbox:checked:after {
+	content: '\2714';
+  position: absolute;
+	top: 0;
+	left: .2rem;
+  color: var(--darker-grey);
+	font-size: 1rem;
+}
+
+.form__button {
+  color: var(--darker-grey);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--green);
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  padding: .75rem;
+
+  transition: .2s;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: var(--dark-green);
+}
+
+/* > mobile large */
+@media (min-width: 524px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form__email-container, .form__password-container,
+  .form__message-container, .form__termsOfUse-container,
+  .form__button {
+    grid-column: 1 / 3;
+  }
+}
+
+/* > tablet */
+@media (min-width: 768px) {
+  .form__email-container, .form__password-container,
+  .form__birthday-container, .form__pizza-container,
+  .form__message-container {
+    min-width: 300px;
+  }
+
+  .form__email-container {
+    grid-column: 1 / 2;
+  }
+
+  .form__password-container {
+    grid-column: 2 / 3;
+  }
+}

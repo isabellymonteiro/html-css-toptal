@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task 1</title>
+</head>
+<body>
+  <main>
+    <h1 class="page__title">Task 1</h1>
+    <section class="form-container">
+      <h2 class="form__title">Responsive mobile-first login form</h2>
+      <form onsubmit="" class="form">
+        <div class="form__email-container">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form__password-container">
+          <label class="form__label" for="password">Password</label>
+          <input class="form__input" type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form__birthday-container">
+          <label class="form__label" for="birthday">Birthday</label>
+          <input class="form__input" type="date" id="birthday" name="birthday" required>
+        </div>
+
+        <div class="form__pizza-container">
+          <label class="form__label" for="pizza">Choose a pizza flavor:</label>
+          <select class="form__select" id="pizza" name="pizza">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="bacon">Bacon</option>
+            <option value="cheese">Cheese</option>
+            <option value="margherita">Margherita</option>
+            <option value="veggie">Veggie</option>
+          </select>
+        </div>
+
+        <div class="form__message-container">
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__message" id="message" name="message" maxlength="200" required></textarea>
+        </div>
+
+        <div class="form__termsOfUse-container">
+          <input class="form__checkbox" type="checkbox" id="termsOfUse" name="termsOfUse" required>
+          <label class="form__label" for="termsOfUse">I agree to the <a href="#">Terms of use</a>.</label>
+        </div>
+
+        <button class="form__button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
