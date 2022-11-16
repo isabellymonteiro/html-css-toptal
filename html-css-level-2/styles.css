@@ -1,0 +1,42 @@
+body {
+  background-color: #262D3D;
+  padding: 4rem 2rem;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #C4C6CA;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ol {
+  width: max-content;
+  margin: 0 auto;
+}
+
+ol li {
+  margin-bottom: 1rem;
+}
+
+li::marker {
+  color: #C4C6CA;
+}
+
+a:link, a:visited {
+  color: #03B080;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #00CC83;
+}
