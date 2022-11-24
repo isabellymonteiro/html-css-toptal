@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  gap: 6px;
+  padding: .5rem;
+  height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: minmax(min-content, 15%) auto;
+  grid-column: 1 / -1;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #F1A076;
+}
+
+header > * {
+  display: grid;
+  align-items: center;
+  background-color: #F8D588;
+}
+
+.logo {
+  justify-items: center;
+}
+
+header > nav {
+  padding: 1rem 2rem;
+}
+
+aside {
+  display: grid;
+  grid-row: 2 / -1;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #D3E960;
+}
+
+aside > * {
+  display: grid;
+  justify-items: center;
+  background-color: #ACB95F;
+  padding: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 3rem;
+  background-color: #8BBAAA;
+}
+
+main > * {
+  background-color: #A0DFCB;
+  padding: 2rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto minmax(min-content, 25%);
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #97CCE8;
+}
+
+footer > * {
+  display: grid;
+  align-items: center;
+  background-color: #8E9CC3;
+  padding: 1rem 2rem;
+}
