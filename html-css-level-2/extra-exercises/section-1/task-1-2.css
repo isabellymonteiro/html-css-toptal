@@ -1,0 +1,12 @@
+/* https://codepen.io/danieljianu/pen/bGKvqLo */
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s ease-in-out; /*only line added by me */
+}
+
+div:hover {
+  width: 300px;
+}
